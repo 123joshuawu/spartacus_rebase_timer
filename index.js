@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const http = require("http");
 const https = require("https");
 
 const { Client, Intents } = require("discord.js");
@@ -134,4 +135,12 @@ client.once("ready", () => {
   }, UPDATE_INTERVAL_MS);
 });
 
+
 client.login(token);
+
+// Trick heroku into thinking we have a web process
+const server = http.createServer((req, res) => {
+  res.end();
+});
+
+server.listen(process.env.PORT || 3000);
