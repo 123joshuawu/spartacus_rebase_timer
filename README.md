@@ -19,3 +19,7 @@ Can also optionally configure certain parameters using the environment variables
 
 ## Example
 ![Screen Shot 2021-11-22 at 12 23 49 PM](https://user-images.githubusercontent.com/9285017/142906887-7ac24a41-3e1e-4b94-968c-51bb0f151e23.png)
+
+## Free bot hosted on heroku
+
+https://discord.com/api/oauth2/authorize?client_id=909643341535281153&permissions=0&scope=bot
