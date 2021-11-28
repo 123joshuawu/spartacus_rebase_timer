@@ -137,10 +137,3 @@ client.once("ready", () => {
 
 
 client.login(token);
-
-// Trick heroku into thinking we have a web process
-const server = http.createServer((req, res) => {
-  res.end();
-});
-
-server.listen(process.env.PORT || 3000);
